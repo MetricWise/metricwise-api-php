@@ -9,6 +9,7 @@ final class MetricWiseAPITest extends TestCase
     {
         $this->mwapi = new MetricWiseAPI();
         $this->mwapi->setAccessKey($_ENV['TEST_ACCESS_KEY']);
+        $this->mwapi->setApiKey($_ENV['TEST_API_KEY']);
         $this->mwapi->setHostname($_ENV['TEST_HOST']);
         $this->mwapi->setUsername($_ENV['TEST_USER']);
     }
@@ -16,7 +17,7 @@ final class MetricWiseAPITest extends TestCase
     public function testSubmitLeadPass(): void
     {
         $lead = array('lastname' => 'test');
-        $this->assertTrue($this->mwapi->submitLead($lead), $this->mwapi->getError());
+        $this->assertTrue($this->mwapi->submitLead($lead));
     }
 
     public function testSubmitLeadFail(): void

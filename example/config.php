@@ -1,4 +1,5 @@
 <?php
-$hostname = 'https://' . gethostname();
+$hostname = 'https://api-' . gethostname();
 $username = 'UserName';
 $accessKey = 'secret';
+$apiKey = 'secret';

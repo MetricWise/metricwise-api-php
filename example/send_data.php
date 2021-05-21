@@ -24,6 +24,7 @@ $lead = array(
 
 $mwapi = new MetricWiseAPI();
 $mwapi->setAccessKey($accessKey);
+$mwapi->setApiKey($apiKey);
 $mwapi->setHostname($hostname);
 $mwapi->setUsername($username);
 if (!$mwapi->submitLead($lead)) {
