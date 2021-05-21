@@ -1,6 +1,7 @@
 <?php
 /**
- * @copyright 2012 MetricWise, Inc. All Rights Reserved.
+ * @copyright 2012-2021 MetricWise, Inc.
+ * @license https://opensource.org/licenses/MIT
  */
 class MetricWiseAPI
 {
