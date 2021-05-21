@@ -77,7 +77,7 @@ class MetricWiseAPI
 		$response = $this->webservice();
 		if (!$response['success']) {
 			echo $response['error']['message'];
-			die;
+			return false;
 		}
 		$token = $response['result']['token'];
 		
