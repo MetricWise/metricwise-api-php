@@ -1,7 +1,7 @@
 # Metricwise API (PHP)
 
 ## Example 
-```
+```php
 require_once('MetricWiseAPI.php');
 
 $mwapi = new MetricWiseAPI();
